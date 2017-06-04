@@ -1,0 +1,19 @@
+<h1>Confirmed Pizzas</h1>
+<div class="container">
+  <div ng-repeat="finalPizza in total.confirmedPizzas track by $index">
+    <div class="row">
+      <div class="col-md-4">
+        <p>Pizza Size: {{finalPizza.size}}</p>
+      </div>
+      <div class="col-md-4">
+          <p>Pizza Toppings, in array form of course!: {{finalPizza.toppings}}</p>
+      </div>
+      <div class="col-md-4">
+        <p>Cost: {{finalPizza.cost | currency}}</p>
+      </div>
+    </div>
+  </div>
+
+  <h2> Grand Total: {{ total.grandTotal.totalCost  | currency}}</h2>
+
+</div>

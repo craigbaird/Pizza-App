@@ -1,0 +1,29 @@
+/*containers*/
+.pageContainer {
+  /*width: 1000px;
+  height: 500px;
+  margin: auto;*/
+}
+.headingContainer {
+  /*width: 100px;
+  margin: auto;*/
+}
+.pizzaSizeContainer {
+  width: 200px;
+}
+.toppingsContainer {
+  width: 400px;
+  margin: 2px;
+}
+
+
+
+/*buttons*/
+.toppingBtn {
+  display: inline-block;
+  margin: auto
+}
+.submitBtn {
+  background-color: green;
+  margin: 3px;
+}

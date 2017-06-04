@@ -1,0 +1,21 @@
+<h1>Ordered Pizzas</h1>
+
+<div ng-repeat="pizza in list.orderedPizzas track by $index">
+  <div class="row">
+    <div class="col-md-2">
+      <p>{{pizza.size}}</p>
+    </div>
+    <div class="col-md-2">
+        <p>{{pizza.toppings}}</p>
+    </div>
+    <div class="col-md-2">
+      <p>{{pizza.cost | currency}}</p>
+    </div>
+    <div class="col-md-2">
+      <button ng-click="list.confirmPizza(pizza)">Confirm</button>
+    </div>
+    <div class="col-md-2">
+      <button ng-click="list.deletePizza(pizza)">Delete</button>
+    </div>
+  </div>
+</div>

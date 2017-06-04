@@ -1,0 +1,20 @@
+<form>
+<div class="container">
+  <div class="pizzaSizeContainer">
+  <select class="form-control" ng-model="order.newPizza.size" >
+    <option value="">---Pizza Size---</option>
+    <option value="small">Small</option>
+    <option value="medium" selected>Medium</option>
+    <option value="large">Large</option>
+  </select>
+</div>
+  <br>
+  <div class="toppingsContainer">
+    <div class="btn-group" ng-repeat="topping in order.toppingsArray">
+      <button class="btn toppingBtn" ng-disabled="topping.disabled" ng-click="order.addToppings(topping)">{{ topping.name }}</button>
+    </div>
+    <button class="btn submitBtn" ng-click="order.addPizza(order.newPizza); order.goBack()">Submit Pizza!</button>
+</form>
+<p>{{order.newPizza.toppings}}</p>
+  </div>
+</div>
